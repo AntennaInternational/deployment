@@ -55,6 +55,7 @@ def install_startup_scripts():
 if __name__ == '__main__':
     pull_git()
     create_venv()
-    install_pip_requirements()
+
     install_supervisor_configs()
     install_startup_scripts()
+    install_pip_requirements()
