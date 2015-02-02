@@ -43,6 +43,7 @@ def install_pip_requirements():
 
 def install_supervisor_configs():
     supervisor_conf_dir = '/etc/supervisor/conf.d'
+    print 'SUPERVISOR DIR {}'.format(supervisor_dir)
     with lcd(supervisor_dir):
         local('mv * {}'.format(supervisor_conf_dir))
 

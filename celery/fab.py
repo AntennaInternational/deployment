@@ -1,10 +1,19 @@
-__author__ = 'brendan'
-from fabric.api import cd, lcd, local
+from  __future__ import with_statement
+from fabric.api import *
+
+from contextlib import contextmanager as _ctxmgr
 import os
 
 scripts_dir = os.path.join(os.path.dirname(__file__), 'sh')
 supervisor_dir = os.path.join(os.path.dirname(__file__), 'supervisor')
 venv_dir = '/webapps/venvs/rack_webapp'
+
+
+@_ctxmgr
+def virtualenv():
+    with lcd(venv_dir):
+        with prefix('source bin/activate'):
+            yield
 
 def install_startup_scripts():
     bin_dir = os.path.join(venv_dir, 'bin')

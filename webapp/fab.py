@@ -1,5 +1,13 @@
-__author__ = 'brendan'
-from fabric.api import local, cd, lcd,settings
+from  __future__ import with_statement
+from fabric.api import *
+
+from contextlib import contextmanager as _ctxmgr
+@_ctxmgr
+def virtualenv():
+    with lcd(os.path.join(venv_dir, app_name)):
+        with prefix('source bin/activate'):
+            yield
+
 import os
 
 scripts_dir = os.path.join(os.path.dirname(__file__), 'sh')
