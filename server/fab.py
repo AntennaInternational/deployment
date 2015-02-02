@@ -54,7 +54,7 @@ def install_startup_scripts():
     venv = os.path.join(venv_dir, app_name, 'bin')
     script_files = os.listdir(scripts_dir)
     with lcd(scripts_dir):
-        local('chmod +x *.sh')
+
         local('cp * {}'.format(venv))
     with lcd(venv):
         for f in script_files:

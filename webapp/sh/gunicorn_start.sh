@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NAME="antenna_app"                                  # Name of the application
-DJANGODIR=/webapps/rack-webapp/src/             # Django project directory
-SOCKFILE=/webapps/venvs/antenna_django/run/gunicorn.sock  # we will communicte using this unix socket
+NAME="rack_webapp"                                  # Name of the application
+DJANGODIR=/webapps/rack_webapp/src/             # Django project directory
+SOCKFILE=/webapps/venvs/rack_webapp/run/gunicorn.sock  # we will communicte using this unix socket
 USER=antenna                                        # the user to run as
 GROUP=webapps                                     # the group to run as
 NUM_WORKERS=3                                     # how many worker processes should Gunicorn spawn
@@ -13,7 +13,7 @@ echo "Starting $NAME as `whoami`"
 
 # Activate the virtual environment
 cd $DJANGODIR
-source /webapps/venvs/antenna_django/bin/activate
+source /webapps/venvs/rack_webapp/bin/activate
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
@@ -21,10 +21,10 @@ export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 RUNDIR=$(dirname $SOCKFILE)
 test -d $RUNDIR || mkdir -p $RUNDIR
 
-cd /webapps/rack-webapp/src
+cd /webapps/rack_webapp/src
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
-exec /webapps/venvs/antenna_django/bin/gunicorn\
+exec /webapps/venvs/rack_webapp/bin/gunicorn\
     ${DJANGO_WSGI_MODULE}:application \
   --name $NAME \
   --workers $NUM_WORKERS \

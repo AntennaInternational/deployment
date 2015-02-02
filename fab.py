@@ -7,6 +7,7 @@ system_dependancies = [
     "autossh",
     "build-essential",
     "tcl8.5",
+    'python-dev',
     "mysql-server",
     "mysql-client",
     "libmysqlclient-dev"

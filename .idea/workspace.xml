@@ -35,7 +35,7 @@
       <file leaf-file-name="fab.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="735">
+            <state line="9" column="17" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="celery.conf" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="celery.conf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/celery/supervisor/celery.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="7" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -72,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fab.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fab.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="1" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.78571427" vertical-offset="690" max-vertical-offset="1110">
+            <state line="56" column="0" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1110">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -83,10 +83,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="server.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/supervisor/server.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="gunicorn_start.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/sh/gunicorn_start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="2" column="17" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -95,7 +104,7 @@
       <file leaf-file-name="fab.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="30" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+            <state line="20" column="30" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1050">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -123,7 +132,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/webapp.py" />
-        <option value="$PROJECT_DIR$/webapp/sh/gunicorn_start.sh" />
         <option value="$PROJECT_DIR$/webapp/sh/celery_start.sh" />
         <option value="$PROJECT_DIR$/webapp/supervisor/rack_webapp.conf" />
         <option value="$PROJECT_DIR$/server/supervisor/rack_server.conf" />
@@ -131,13 +139,14 @@
         <option value="$PROJECT_DIR$/redis/fab.py" />
         <option value="$PROJECT_DIR$/fabfile.py" />
         <option value="$PROJECT_DIR$/celery/sh/celery_start.sh" />
-        <option value="$PROJECT_DIR$/fab.py" />
         <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/server/supervisor/server.conf" />
         <option value="$PROJECT_DIR$/celery/supervisor/celery.conf" />
         <option value="$PROJECT_DIR$/webapp/fab.py" />
         <option value="$PROJECT_DIR$/celery/fab.py" />
         <option value="$PROJECT_DIR$/server/fab.py" />
+        <option value="$PROJECT_DIR$/fab.py" />
+        <option value="$PROJECT_DIR$/webapp/sh/gunicorn_start.sh" />
       </list>
     </option>
   </component>
@@ -252,6 +261,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deploment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supervisor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deploment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sh" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,10 +570,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="877" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38309115" sideWeight="0.7463127" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38309115" sideWeight="0.7463127" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -609,29 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/sh/gunicorn_start.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="735">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/celery/supervisor/celery.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/supervisor/rack_webapp.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="56" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -646,9 +668,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/fab.py">
+    <entry file="file://$PROJECT_DIR$/celery/fab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+        <state line="19" column="26" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="600">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/supervisor/server.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1110">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -662,21 +700,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/celery/fab.py">
+    <entry file="file://$PROJECT_DIR$/webapp/fab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="600">
+        <state line="20" column="30" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/fab.py">
+    <entry file="file://$PROJECT_DIR$/fab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="1" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.78571427" vertical-offset="690" max-vertical-offset="1110">
+        <state line="9" column="17" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/sh/gunicorn_start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery/supervisor/celery.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="420">
+          <folding />
         </state>
       </provider>
     </entry>
