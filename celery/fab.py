@@ -17,11 +17,11 @@ def virtualenv():
 
 def install_startup_scripts():
     bin_dir = os.path.join(venv_dir, 'bin')
-    script_files = os.list_dir(scripts_dir)
+    script_files = os.listdir(scripts_dir)
     with lcd(scripts_dir):
         local('chmod +x *')
         local('mv * {}'.format(bin_dir))
-    with lcd(venv):
+    with lcd(bin_dir):
         for f in script_files:
             local('chmod +x ./{}'.format(f))
 
