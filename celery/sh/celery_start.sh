@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DJANGODIR=/webapps/rack-webapp/src/             # Django project directory
+DJANGODIR=/webapps/rack_webapp/src/             # Django project directory
 USER=antenna                                        # the user to run as
 GROUP=webapps                                     # the group to run as
 DJANGO_SETTINGS_MODULE=settings.defaults             # which settings file should Django use
