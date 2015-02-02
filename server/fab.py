@@ -34,6 +34,8 @@ def create_venv():
     with lcd(venv_dir):
         cd(venv_dir)
         local('virtualenv {}'.format(app_name))
+        with lcd('app_name'):
+            local('mkdir -p logs')
 
 
 def install_pip_requirements():

@@ -35,8 +35,10 @@
       <file leaf-file-name="fab.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <folding />
+            <state line="11" column="5" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="735">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,19 +72,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gunicorn_start.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/sh/gunicorn_start.sh">
+      <file leaf-file-name="fab.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
+            <state line="36" column="0" selection-start="1095" selection-end="1160" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1020">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start_server.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/sh/start_server.sh">
+      <file leaf-file-name="gunicorn_start.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/sh/gunicorn_start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="41" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="120">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -100,7 +104,7 @@
       <file leaf-file-name="fab.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="8" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53571427" vertical-offset="345" max-vertical-offset="930">
+            <state line="34" column="8" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.39285713" vertical-offset="345" max-vertical-offset="975">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -139,8 +143,9 @@
         <option value="$PROJECT_DIR$/celery/sh/celery_start.sh" />
         <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/celery/fab.py" />
-        <option value="$PROJECT_DIR$/server/fab.py" />
         <option value="$PROJECT_DIR$/server/supervisor/server.conf" />
+        <option value="$PROJECT_DIR$/fab.py" />
+        <option value="$PROJECT_DIR$/server/fab.py" />
         <option value="$PROJECT_DIR$/webapp/fab.py" />
       </list>
     </option>
@@ -669,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/fab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
@@ -686,15 +684,6 @@
     <entry file="file://$PROJECT_DIR$/celery/fab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/fab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="30" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="990">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -729,9 +718,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="735">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1095" selection-end="1160" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/fab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="8" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53571427" vertical-offset="345" max-vertical-offset="930">
+        <state line="34" column="8" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.39285713" vertical-offset="345" max-vertical-offset="975">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

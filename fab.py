@@ -8,7 +8,8 @@ system_dependancies = [
     "build-essential",
     "tcl8.5",
     "mysql-server",
-    "mysql-client"
+    "mysql-client",
+    "libmysqlclient-dev"
 ]
 
 python_dependancies = [
