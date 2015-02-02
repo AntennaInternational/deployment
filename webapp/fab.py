@@ -35,8 +35,8 @@ def create_venv():
 
 def install_pip_requirements():
     rfile = os.path.join(target_dir, app_name, requirements_file)
-    local('source {}'.format(os.path.join(venv_dir, app_name, 'bin', 'activate')))
-    local('pip install -r {}'.format(rfile))
+    with virtualenv():
+        local('pip install -r {}'.format(rfile))
 
 def install_supervisor_configs():
     supervisor_conf_dir = '/etc/supervisor/conf.d'

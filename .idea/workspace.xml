@@ -100,7 +100,7 @@
       <file leaf-file-name="fab.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/fab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="26" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.5714286" vertical-offset="465" max-vertical-offset="930">
+            <state line="38" column="8" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53571427" vertical-offset="345" max-vertical-offset="930">
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -731,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/fab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="26" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.5714286" vertical-offset="465" max-vertical-offset="930">
+        <state line="38" column="8" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53571427" vertical-offset="345" max-vertical-offset="930">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
