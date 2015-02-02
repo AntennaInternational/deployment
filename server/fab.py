@@ -5,7 +5,7 @@ from contextlib import contextmanager as _ctxmgr
 @_ctxmgr
 def virtualenv():
     with lcd(os.path.join(venv_dir, app_name)):
-        with prefix('source bin/activate'):
+        with prefix('. bin/activate'):
             yield
 import os
 
