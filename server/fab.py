@@ -1,5 +1,12 @@
-__author__ = 'brendan'
-from fabric.api import local, cd, lcd,settings
+from  __future__ import with_statement
+from fabric.api import *
+
+from contextlib import contextmanager as _ctxmgr
+@_ctxmgr
+def virtualenv():
+    with lcd(os.path.join(venv_dir, app_name)):
+        with prefix('source bin/activate'):
+            yield
 import os
 
 scripts_dir = os.path.join(os.path.dirname(__file__), 'sh')
@@ -9,6 +16,9 @@ venv_dir = '/webapps/venvs/'
 app_name = 'rack_server'
 repo_url = "https://github.com/AntennaInternational/rack-server.git"
 requirements_file = 'requirements.txt'
+
+
+
 
 def pull_git(origin='master'):
     with lcd(target_dir):
@@ -25,10 +35,11 @@ def create_venv():
         cd(venv_dir)
         local('virtualenv {}'.format(app_name))
 
+
 def install_pip_requirements():
     rfile = os.path.join(target_dir, app_name, requirements_file)
-    local('source {}'.format(os.path.join(venv_dir, app_name, 'bin', 'activate')))
-    local('pip install -r {}'.format(rfile))
+    with virtualenv():
+        local('pip install -r {}'.format(rfile))
 
 def install_supervisor_configs():
     supervisor_conf_dir = '/etc/supervisor/conf.d'
