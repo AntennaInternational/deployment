@@ -52,6 +52,7 @@ def install_supervisor_configs():
 def install_startup_scripts():
     venv = os.path.join(venv_dir, app_name, 'bin')
     with lcd(scripts_dir):
+        local('chmod +x *')
         local('mv * {}'.format(venv))
 
 if __name__ == '__main__':

@@ -18,7 +18,9 @@ def virtualenv():
 def install_startup_scripts():
     bin_dir = os.path.join(venv_dir, 'bin')
     with lcd(scripts_dir):
+        local('chmod +x *')
         local('mv * {}'.format(bin_dir))
+
 
 def install_supervisor_configs():
     supervisor_conf_dir = '/etc/supervisor/conf.d'
