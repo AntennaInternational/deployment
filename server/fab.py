@@ -48,14 +48,14 @@ def install_supervisor_configs():
     supervisor_conf_dir = '/etc/supervisor/conf.d'
     print 'SUPERVISOR DIR {}'.format(supervisor_dir)
     with lcd(supervisor_dir):
-        local('mv * {}'.format(supervisor_conf_dir))
+        local('cp * {}'.format(supervisor_conf_dir))
 
 def install_startup_scripts():
     venv = os.path.join(venv_dir, app_name, 'bin')
     script_files = os.listdir(scripts_dir)
     with lcd(scripts_dir):
         local('chmod +x *.sh')
-        local('mv * {}'.format(venv))
+        local('cp * {}'.format(venv))
     with lcd(venv):
         for f in script_files:
             local('chmod +x ./{}'.format(f))
