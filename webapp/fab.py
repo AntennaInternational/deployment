@@ -48,10 +48,13 @@ def install_supervisor_configs():
 
 def install_startup_scripts():
     venv = os.path.join(venv_dir, app_name, 'bin')
+    script_files = os.listdir(scripts_dir)
     with lcd(scripts_dir):
         local('chmod +x *')
         local('cp * {}'.format(venv))
-
+    with lcd(venv):
+        for f in script_files:
+            local('chmod +x ./{}'.format(f))
 
 if __name__ == '__main__':
     pull_git()

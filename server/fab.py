@@ -25,10 +25,11 @@ def pull_git(origin='master'):
         local('sudo rm -f -R {}'.format(app_name))
         local('mkdir -p {}'.format(app_name))
         local('git clone {0} {1}'.format(repo_url, os.path.join(target_dir, app_name)))
+    '''
     with lcd(os.path.join(target_dir,app_name)):
         local('ls')
         local('git pull origin {}'.format(origin))
-
+    '''
 def create_venv():
     local('mkdir -p {}'.format(venv_dir))
     with lcd(venv_dir):
@@ -51,9 +52,13 @@ def install_supervisor_configs():
 
 def install_startup_scripts():
     venv = os.path.join(venv_dir, app_name, 'bin')
+    script_files = os.listdir(scripts_dir)
     with lcd(scripts_dir):
-        local('chmod +x *')
+        local('chmod +x *.sh')
         local('mv * {}'.format(venv))
+    with lcd(venv):
+        for f in script_files:
+            local('chmod +x ./{}'.format(f))
 
 if __name__ == '__main__':
     pull_git()
