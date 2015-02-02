@@ -23,10 +23,11 @@ def pull_git(origin='master'):
         local('sudo rm -f -R {}'.format(app_name))
         local('mkdir -p {}'.format(app_name))
         local('git clone {0} {1}'.format(repo_url, os.path.join(target_dir, app_name)))
+    '''
     with lcd(os.path.join(target_dir,app_name)):
         local('ls')
         local('git pull origin {}'.format(origin))
-
+    '''
 def create_venv():
     local('mkdir -p {}'.format(venv_dir))
     with lcd(venv_dir):
