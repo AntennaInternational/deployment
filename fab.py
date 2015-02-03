@@ -10,7 +10,8 @@ system_dependancies = [
     'python-dev',
     "mysql-server",
     "mysql-client",
-    "libmysqlclient-dev"
+    "libmysqlclient-dev",
+    "nginx"
 ]
 
 python_dependancies = [
